@@ -10,7 +10,7 @@
     "build": "ng build && node server.js",
     "test": "ng test",
     "lint": "ng lint",
-    "postinstall": "ng build --prod",
+    "postinstall": "ng build -e=prod --prod --no-sourcemap --aot",
     "e2e": "ng e2e"
   },
   "private": true,
