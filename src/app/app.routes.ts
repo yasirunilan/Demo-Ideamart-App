@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './views/login/login.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import {PostsComponent} from './posts/posts.component';
+import {SubscribersComponent} from './subscribers/subscribers.component';
+import {MessageListComponent} from './message-list/message-list.component';
 import {TasksComponent} from './tasks/tasks.component';
 
 const appRoutes: Routes = [
@@ -14,11 +16,6 @@ const appRoutes: Routes = [
     path: 'dashboard',
     component: DashboardComponent
   },
-  // {
-  //   path: '',
-  //   redirectTo: 'postsviewurl',
-  //   pathMatch: 'full'
-  // },
   {
     path: 'postsviewurl',
     component: PostsComponent
@@ -30,6 +27,14 @@ const appRoutes: Routes = [
   {
     path: 'loginviewurl',
     component: LoginComponent
+  },
+  {
+    path: 'subscribersurl',
+    component: SubscribersComponent
+  },
+  {
+    path: 'messagessurl',
+    component: MessageListComponent
   }
 ];
 

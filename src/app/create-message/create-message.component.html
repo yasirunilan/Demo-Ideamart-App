@@ -1,0 +1,10 @@
+<div>
+  <label>text: </label>
+  <input [(ngModel)]="message.text" placeholder="text">
+  <button (click)="onClickMe()">Click me!</button>
+  {{clickMessage}}
+</div>
+
+<button (click)="logout()" *ngIf="authService.user | async">
+  Logout
+</button>

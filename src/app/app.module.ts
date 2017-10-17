@@ -17,7 +17,12 @@ import { TasksComponent } from './tasks/tasks.component';
 import {RouterModule} from '@angular/router';
 import {PostsService} from './posts.service';
 import {TaskService} from './task.service';
+import {SubscribersService} from './subscribers.service';
 import {HttpModule} from '@angular/http';
+import { SubscribersComponent } from './subscribers/subscribers.component';
+import { MessageListComponent } from './message-list/message-list.component';
+import {MessageService} from './message.service';
+import { CreateMessageComponent } from './create-message/create-message.component';
 // import { provideRoutes} from '@angular/router';
 
 
@@ -27,7 +32,10 @@ import {HttpModule} from '@angular/http';
     LoginComponent,
     DashboardComponent,
     PostsComponent,
-    TasksComponent
+    TasksComponent,
+    SubscribersComponent,
+    MessageListComponent,
+    CreateMessageComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +47,7 @@ import {HttpModule} from '@angular/http';
     FormsModule
     // RouterModule.forRoot(ROUTES) // Add routes to the app
   ],
-  providers: [AuthService, PostsService, TaskService],
+  providers: [AuthService, PostsService, TaskService, SubscribersService, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

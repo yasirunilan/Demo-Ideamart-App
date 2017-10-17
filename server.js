@@ -8,6 +8,9 @@ const bodyParser = require('body-parser');
 const api = require('./server/routes/api');
 const tasks = require('./server/routes/tasks');
 const login = require('./server/routes/login');
+const subscribers = require('./server/routes/subscribers');
+const messages = require('./server/routes/messages');
+
 
 const app = express();
 
@@ -22,6 +25,8 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.use('/api', api);
 app.use('/tasks', tasks);
 app.use('/login', login);
+app.use('/subscribers', subscribers);
+app.use('/messages', messages);
 
 // Catch all other routes and return the index file
 app.get('*', function(req, res, next) {
