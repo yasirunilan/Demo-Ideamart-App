@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "preinstall": "npm install -g angular-cli",
+    "preinstall": "npm install -g angular-cli@1.4.1",
     "start": "ng build && node server.js",
     "build": "ng build && node server.js",
     "test": "ng test",
