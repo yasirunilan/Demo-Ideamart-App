@@ -10,7 +10,7 @@ import * as firebase from 'firebase/app';
 })
 export class DashboardComponent implements OnInit {
   private user: Observable<firebase.User>;
-  title = 'This is the app';
+  title = 'This is the app nw';
 
   constructor(public authService: AuthService) { }
 
